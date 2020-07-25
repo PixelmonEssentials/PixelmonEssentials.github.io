@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/theme.css">
+		<title>Pixelmon Essentials</title>
+	</head>
+	<body>
+		<ul class="nav nav-pills nav-fill">
+			<a class="navbar-brand" href="#">
+				<div class="logo">
+					Pixelmon Essentials
+				</div>
+			</a>
+			<li class="nav-item">
+			  <a class="nav-link" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="getting_started.html">Getting Started</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link active" href="features.html">Features</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">FAQ</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Discord</a>
+			</li>
+			<div class="nav-padding">
+			</div>
+		</ul>
+		<br>
+		<div class="jumbotron">
+            <h1 class="display-6 centered">Spawners</h1>
+            <br/>
+			<div class="row">
+                <table class="commandTable">
+                    <tr>
+                        <th>Command name</th>
+                        <th>Command result</th>
+                    </tr>
+                    <tr>
+                        <td>/pespawner</td>
+                        <td>Opens the Essentials spawner data menu.</td>
+                    </tr>
+                    <tr>
+                        <td>/pespawner [x] [y] [z]</td>
+                        <td>If the block at the coordinates is a spawner, will open the spawner menu for you to edit its contents remotely.</td>
+                    </tr>
+                </table>
+                <br/>
+                Pixelmon Essentials' spawners simplifies the job of placing Spawners by centralizing spawns in 1 location, and have the individual spawners read from those set values. Most routes usually have the same spawns, but spread through multiple areas, and this GUI will simplify your job significantly.
+                <br/>
+                <div class="picture"><img src="images/FirstSpawnerGui.png"></div>
+                <br/>
+                This is the first spawner GUI. This has the list of all the spawnset IDs, along with all of the spawns in it when you select it. As you can see, you can add a new ID by clicking the + on the left side, or delete one by clicking the button next to it.<br/>
+                You can add a new species to the ID by clicking the + button. You can also edit an existing one by selecting it and clicking the edit button. If you select either of the 2, you will be brought to the following GUI:<br/>
+                <div class="picture"><img src="images/SecondSpawnerGui.png"></div><br/>
+                <div>Here's what the different fields there mean:<br/>
+                    <b>Name</b>: the species name<br/>
+                    <b>Min level</b>: the minimum level that species can spawn in from that spawner.<br/>
+                    <b>Max level</b>: the minimum level that species can spawn in from that spawner.<br/>
+                    <b>Rarity</b>: the rarity weight this species has to spawn. The chance of that Pokémon to spawn is weight/sum of weights from that id that can spawn at that time of the day.<br/>
+                    <b>Spawn times</b>: the times of the day that species spawns at that spawner id. Can be changed by using the edit and clear buttons. Can always spawn if left empty.<br/>
+                    <br/>
+                    You've set your first spawn data id! Now, you might be wondering how you apply it on a spawner? Here's an example:<br>
+                </div>
+                <div class="picture"><img src="images/SpawnerBlock.png"></div><br/>
+                <div>
+                    You simply set the Pokémon to spawn as Arceus, and you set the rarity to the spawn data ID associated with that number.<br/>
+                    <br/>
+                    If for some reason you don't particularly like setting the spawn data through the in-game gui, you can also work on spawn data by using the external files, that you can find in the spawner folder of the pixelmon essentials directory.<br/>
+                    <br/>
+                    <b>Is that it for spawners?</b><br/>
+                    Not quite. On top of everything shown above, there's also a functionality implemented in Pixelmon Essentials that keeps track of every spawner placed since installing the server, saving the dimension id, along with the coordinates of the spawner in the spawners.json file found in the pixelmon essentials data folder. If you're releasing your map publicly, I'd recommend removing that folder if you don't want people to know where everything spawns exactly.
+                </div>
+            </div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>

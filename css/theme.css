@@ -1,0 +1,113 @@
+body {
+    background-color: #ACB4BD;
+}
+
+.navbar-brand{
+    width: 25%;
+}
+
+.logo{
+    color: #FFFFFF;
+    line-height: 45px;
+    margin-left: 25%;
+}
+
+.nav{
+    height: 60px;
+    background-color: #108BDE;
+}
+
+.center{
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+.title{
+    text-align:center;
+}
+
+.jumbotron{
+    background-color: #D8D8D8;
+    color: #181818;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.nav-padding{
+    width: 15%;
+}
+
+.nav-item{
+    height: 60px;
+}
+
+.nav-link{
+    height: 60px;
+    line-height: 40px;
+    color: #e8e8e8;
+}
+
+.nav-link:hover{
+    color: #ffffff;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #29CDFF;
+}
+
+.card-header{
+    background-color: #181818;
+    color: #8E2C9F;
+}
+
+.btn-link{
+    color: #8E2C9F;
+}
+
+.btn-link:hover{
+    color: #E735FF;
+}
+
+.card-body{
+    background-color: #282828;
+}
+
+.card{
+    background-color: #282828;
+}
+
+.collapse{
+    background-color: #282828;
+    height: 100%;
+}
+
+.commandTable{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px black;
+    width: 80%;
+}
+
+.picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centered{
+    text-align: center;
+}
+
+th{
+    border: solid 2px black;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+td{
+    border: solid 2px black;
+    background-color: #f0f0f0;
+    text-align: center;
+}

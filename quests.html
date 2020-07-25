@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/theme.css">
+		<title>Pixelmon Essentials</title>
+	</head>
+	<body>
+		<ul class="nav nav-pills nav-fill">
+			<a class="navbar-brand" href="#">
+				<div class="logo">
+					Pixelmon Essentials
+				</div>
+			</a>
+			<li class="nav-item">
+			  <a class="nav-link" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="getting_started.html">Getting Started</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link active" href="#">Features</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">FAQ</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Discord</a>
+			</li>
+			<div class="nav-padding">
+			</div>
+		</ul>
+		<br>
+		<div class="jumbotron">
+			<h1 class="display-6 center">Quest Objectives</h1>
+			<div class="row">
+                <table class="commandTable">
+                        <tr>
+                            <th>Command name</th>
+                            <th>Command result</th>
+                        </tr>
+                        <tr>
+                            <td>/pequest</td>
+                            <td>Opens the Essentials quests menu.</td>
+                        </tr>
+                    </table>
+                    <br/>
+                    Pixelmon Essentials adds multiple new Quest Objectives that fit what you would want for a Pixelmon experience to the Custom NPCs system. To be able to use the Pixelmon Essentials objectives, you need to first create the quest as a manual quest in the standard Custom NPCs system. This is what it looks like in the NPC Wand:<br/>
+                    <br/>
+                    <div class="picture"><img src="images/ManualQuest.png"></div><br/>
+                    After setting the quest as Manual, you need to set the quest's objectives by clicking the edit button next to it. In there, you can change the objectives' names and quantities.<br/>
+                    <div class="picture"><img src="images/ManualQuestObjectives.png"></div><br/>
+                    Once you've done that, you can add your custom objectives in the Essentials Quest menu. To open it, use /pequest. Once in there, you'll see every Quest Category with a Manual Quest, and selecting a category will show you every Manual Quest in that category.<br/>
+                    <div class="picture"><img src="images/EssentialsQuests.png"></div><br/>
+                    <div class="picture"><img src="images/Objectives.png"></div><br/>
+                    After selecting the quest, you'll see the screen right under the first one, where you'll be able to select an objective, and set its custom objective, or remove it if it already has one. If it already has an objective, you don't need to remove it in order to replace it. Once you select your objective and pick edit, you'll be brought to this screen, where you can pick the objective from the list:<br/>
+                    <div class="picture"><img src="images/CustomObjectives.png"></div><br/>
+                    There's 3 different types of quest objectives, along with 3 filter types, that apply to all of those objectives:<br/>
+                    <br/>
+                    <table class="commandTable">
+                        <tr>
+                            <th>Caught</th>
+                            <td>Checks if the specified filter is registered as caught enough times in the dex. If species is specified as the filter, the objective will always be filled to the max progression as long as it's registered in the dex, not matter the number it's set to.</td>
+                        </tr>
+                        <tr>
+                            <th>Party</th>
+                            <td>Checks if the specified filter is present in the player's party.</td>
+                        </tr>
+                        <tr>
+                            <th>KO Pokémon</th>
+                            <td>Pretty self explanatory. Only counts if it's a wild Pokémon.</td>
+                        </tr>
+                    </table><br/>
+                    And here are the different filter types available:
+                    <table class="commandTable">
+                        <tr>
+                            <th>Any</th>
+                            <td>Anything will increase the objective's progress. For example, a KO quest with this will work pretty much the same way as charging an orb for the legendary birds.</td>
+                        </tr>
+                        <tr>
+                            <th>Species</th>
+                            <td>Will only increase the progress of a quest if the target is a specific species.</td>
+                        </tr>
+                        <tr>
+                            <th>Type</th>
+                            <td>Will increase progress of a quest as long as the target is of that type.</td>
+                        </tr>
+                    </table><br/>
+                    <br/>
+                    <br/>
+                    <b>Anything else that would be useful to know?</b>
+                    Every custom objective is saved in the Essentials folder, in the file "Quests.json". If you want to back them up or edit them while offline, you can do it that way.
+                </div>
+            </div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>
