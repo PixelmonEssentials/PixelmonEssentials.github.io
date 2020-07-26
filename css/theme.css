@@ -36,7 +36,7 @@ body {
 }
 
 .nav-padding{
-    width: 15%;
+    width: 5%;
 }
 
 .nav-item{
@@ -91,9 +91,10 @@ body {
 }
 
 .picture{
+    width:100%;
     display: block;
-    margin-left: 30%;
-    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .centered{
