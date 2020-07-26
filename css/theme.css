@@ -57,17 +57,16 @@ body {
     background-color: #29CDFF;
 }
 
-.card-header{
-    background-color: #181818;
-    color: #8E2C9F;
+.btn-primary{
+    display: block;
 }
 
-.btn-link{
-    color: #8E2C9F;
+.collapse{
+    display: block;
 }
 
-.btn-link:hover{
-    color: #E735FF;
+.paste{
+    color: #e8e8e8;
 }
 
 .card-body{
