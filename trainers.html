@@ -1,0 +1,206 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/theme.css">
+		<title>Pixelmon Essentials</title>
+	</head>
+	<body>
+		<ul class="nav nav-pills nav-fill">
+			<a class="navbar-brand" href="#">
+				<div class="logo">
+					Pixelmon Essentials
+				</div>
+			</a>
+			<li class="nav-item">
+			  <a class="nav-link" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="getting_started.html">Getting Started</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link active" href="features.html">Features</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">FAQ</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="https://discord.gg/xwRjByU">Discord</a>
+			</li>
+			<div class="nav-padding">
+			</div>
+		</ul>
+		<br>
+		<div class="jumbotron">
+			<h1 class="display-6 center">Trainers</h1>
+			<div class="row">
+                <table class="commandTable">
+                    <tr>
+                        <th>Command name</th>
+                        <th>Permission</th>
+                        <th>Command result</th>
+                    </tr>
+                    <tr>
+                        <td>/pewand</td>
+                        <td>pixelmonessentials.pewand</td>
+                        <td>Gives you the Essentials Wand, used to edit NPCs.</td>
+                    </tr>
+                    <tr>
+                        <td>/peteams reload</td>
+                        <td>pixelmonessentials.peteams</td>
+                        <td>Reloads the teams in the teams folder.</td>
+                    </tr>
+                </table>
+                <br/>
+                <p>This section will be about how to set your own trainers with CNPC-based trainers. The first thing to note is that the teams the trainers take are ones loaded from the teams folder in the pixelmonessentials folder. The files taken are .txt files, taking teams from showdown exports. More specifically, the teams are read in the format of showdown's mass export/import feature, like this:</p>
+                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Toggle</a></p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <code class="paste">
+                            === [gen7ou] Untitled 154 ===<br>
+                            <br>
+                            Clefable @ Leftovers  <br>
+                            Ability: Magic Guard  <br>
+                            EVs: 252 HP / 248 Def / 8 Spe  <br>
+                            Bold Nature  <br>
+                            IVs: 0 Atk  <br>
+                            - Stealth Rock  <br>
+                            - Moonblast  <br>
+                            - Soft-Boiled  <br>
+                            - Wish  <br>
+                            <br>
+                            Mawile-Mega @ Mawilite  <br>
+                            Ability: Intimidate  <br>
+                            EVs: 112 HP / 216 Atk / 180 Spe  <br>
+                            Adamant Nature  <br>
+                            - Iron Head  <br>
+                            - Ice Punch  <br>
+                            - Thunder Punch  <br>
+                            - Fire Fang  <br>
+                            <br>
+                            Heatran @ Firium Z  <br>
+                            Ability: Flash Fire  <br>
+                            EVs: 252 SpA / 4 SpD / 252 Spe  <br>
+                            Timid Nature  <br>
+                            IVs: 0 Atk  <br>
+                            - Taunt  <br>
+                            - Magma Storm  <br>
+                            - Earth Power  <br>
+                            - Will-O-Wisp  <br>
+                            <br>
+                            Gastrodon-East @ Leftovers  <br>
+                            Ability: Storm Drain  <br>
+                            EVs: 252 HP / 4 Def / 252 SpD  <br>
+                            Sassy Nature  <br>
+                            - Scald  <br>
+                            - Earthquake  <br>
+                            - Toxic  <br>
+                            - Recover  <br>
+                            <br>
+                            Tornadus-Therian @ Rocky Helmet  <br>
+                            Ability: Regenerator  <br>
+                            EVs: 192 HP / 68 SpA / 248 Spe  <br>
+                            Timid Nature  <br>
+                            - Defog  <br>
+                            - Hurricane  <br>
+                            - Knock Off  <br>
+                            - U-turn  <br>
+                            <br>
+                            Landorus-Therian @ Choice Scarf  <br>
+                            Ability: Intimidate  <br>
+                            EVs: 96 HP / 20 Atk / 136 Def / 4 SpD / 252 Spe  <br>
+                            Jolly Nature  <br>
+                            - Earthquake  <br>
+                            - Hidden Power [Ice]  <br>
+                            - Punishment  <br>
+                            - U-turn  <br>
+                            <br>
+                            <br>
+                            === Untitled 231 ===<br>
+                            <br>
+                            Venusaur @ Venusaurite  <br>
+                            Ability: Chlorophyll  <br>
+                            EVs: 248 HP / 8 Def / 252 SpD  <br>
+                            Sassy Nature  <br>
+                            - Earthquake  <br>
+                            - Sludge Bomb  <br>
+                            - Synthesis  <br>
+                            - Hidden Power [Fire]  <br>
+                            <br>
+                            Clefable @ Leftovers  <br>
+                            Ability: Magic Guard  <br>
+                            EVs: 252 HP / 248 Def / 8 SpD  <br>
+                            Bold Nature  <br>
+                            IVs: 0 Atk  <br>
+                            - Stealth Rock  <br>
+                            - Moonblast  <br>
+                            - Soft-Boiled  <br>
+                            - Wish  <br>
+                            <br>
+                            Landorus-Therian @ Choice Scarf  <br>
+                            Ability: Intimidate  <br>
+                            EVs: 120 HP / 48 Atk / 132 Def / 12 SpD / 196 Spe  <br>
+                            Jolly Nature  <br>
+                            - Earthquake  <br>
+                            - Hidden Power [Ice]  <br>
+                            - U-turn  <br>
+                            - Defog  <br>
+                            <br>
+                            Greninja-Ash @ Choice Specs  <br>
+                            Ability: Battle Bond  <br>
+                            EVs: 252 SpA / 4 SpD / 252 Spe  <br>
+                            Timid Nature  <br>
+                            - Spikes  <br>
+                            - Hydro Pump  <br>
+                            - Dark Pulse  <br>
+                            - Water Shuriken  <br>
+                            <br>
+                            Zygarde @ Weakness Policy  <br>
+                            Ability: Aura Break  <br>
+                            EVs: 240 Atk / 88 SpD / 180 Spe  <br>
+                            Adamant Nature  <br>
+                            - Dragon Dance  <br>
+                            - Thousand Arrows  <br>
+                            - Iron Tail  <br>
+                            - Extreme Speed  <br>
+                            <br>
+                            Celesteela @ Leftovers  <br>
+                            Ability: Beast Boost  <br>
+                            EVs: 252 HP / 152 Def / 104 SpD  <br>
+                            Relaxed Nature  <br>
+                            - Heavy Slam  <br>
+                            - Flamethrower  <br>
+                            - Leech Seed  <br>
+                            - Protect  
+                        </code>
+                    </div>
+                </div>
+                <p>You currently can't edit teams in-game, but you can reload them in-game after editing files with /peteams reload. Once you have a team, right click the NPC you want to set as a trainer with the Essentials Wand.</p>
+                <div class="picture"><img src="images/trainer/WandMenu.png"></div>
+                <p>We will get back to the Other menu later, for now, we'll take a look at Trainer Battle.</p>
+                <div class="picture"><img src="images/trainer/TrainerData.png"></div>
+                <p>Here's some info about the different fields you can enter here:</p>
+                <p><b>Init dialog id</b> is the dialog id that will start the battle once the dialog is done being read. If <b>battle on sight</b> is set to yes, it will mean that the trainer will open this dialog when it sees the player. Some info about on sight dialogs will be explained lower, when I'll cover other settings from the wand.</p>
+                <p><b>Win dialog id</b> is the dialog id that will appear after a battle if the player wins the battle. If you want a quest that requires defeating a certain trainer, set the quest as a dialog quest with this dialog as the quest objective.</p>
+                <p><b>Loss dialog id</b> is the dialog id that will appear after a battle if the player loses the battle. If this dialog is read by the player, the init dialog will be considered unread, so the npc can be challenged again later. If you're using Battle on sight, I'd recommend also using Trainer Commands to warp the player somewhere else so that the dialog isn't automatically rechallenged again without a team ready.</p>
+                <p><b>Team</b> is the team that'll be used by the NPC. More details on selecting a team coming a bit lower.</p>
+                <p><b>Rules</b> are the battle rules that you want the NPC to have. If you don't select anything, it'll be using standard rules. For more details on setting up custom rules, check out <a href="rules.html">the battle rules section.</a></p>
+                <p>If you're not sure what I mean by dialog id, this is where you can find it on the dialog's edit menu:</p>
+                <div class="picture"><img src="images/trainer/DialogId.png"></div>
+                <p>If you click select team, you'll be taken to this menu, where you will be able to see every team you've got loaded:</p>
+                <div class="picture"><img src="images/trainer/SelectTeam.png"></div>
+                <p>If you don't remember what your team has in it, you can click "View Team", which will give you this view of your team:</p>
+                <div class="picture"><img src="images/trainer/ViewTeam.png"></div>
+                <p>Cancel will take you back to team selection, while select will lock that team. For battle rules, there's very little different from the other rule selection screen:</p>
+                <div class="picture"><img src="images/trainer/RuleSelection.png"></div>
+                <p>Since this covers pretty much everything for the trainer section. I'll cover the short section about the other settings section:</p>
+                <div class="picture"><img src="images/trainer/OtherSettings.png"></div>
+                <p>This is mainly used if you want to have a dialog on sight like for battles, but without having a battle linked to the dialog. Here's a few things to note about the on sight dialog's behavior: the current range cap is of 5 blocks. The main reason for that is to prevent performance from taking too much of a hit by tracking too big of a radius. The other thing is that dialogs won't appear if you're in creative or spectator mode.</p>
+                <p>That covers pretty much everything trainer related. If you're curious on where the trainer and the on sight dialog data is saved, it's saved in the first page of scripts:</p>
+                <div class="picture"><img src="images/trainer/ScriptData.png"></div>
+            </div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>

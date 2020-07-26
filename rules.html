@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/theme.css">
+		<title>Pixelmon Essentials</title>
+	</head>
+	<body>
+		<ul class="nav nav-pills nav-fill">
+			<a class="navbar-brand" href="#">
+				<div class="logo">
+					Pixelmon Essentials
+				</div>
+			</a>
+			<li class="nav-item">
+			  <a class="nav-link" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="getting_started.html">Getting Started</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link active" href="features.html">Features</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">FAQ</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="https://discord.gg/xwRjByU">Discord</a>
+			</li>
+			<div class="nav-padding">
+			</div>
+		</ul>
+		<br>
+		<div class="jumbotron">
+            <h1 class="display-6 center">Battle Rules</h1>
+            <table class="commandTable">
+                <tr>
+					<th>Command name</th>
+					<th>Permission</th>
+                    <th>Command result</th>
+                </tr>
+                <tr>
+					<td>/perules</td>
+					<td>pixelmonessentials.perules</td>
+                    <td>Opens the Battle Rules menu.</td>
+                </tr>
+            </table>
+            <br/>
+            <p>This section is for managing custom battle rules that you can set up to use for NPCs like in the base mod. The bright side with our system is that custom rules that you set up will be saved as presets, which means that you won't need to set the rules again every time you want to set up a trainer with those rules.</p>
+            <p>There are 2 ways to open the custom rules menu. The first way is by using the /perules command, which is used to manage the rules, but you can also open it when setting the data for a NPC trainer, and create a new preset when doing so. The only difference is that you'll have 2 more buttons, to cancel selecting rules, and to finalize selecting rules. Once opening the rules screen, you will find be greeted with this GUI:</p>
+			<div class="picture"><img src="images/rules/CustomRulesGUI.png"></div>
+			<br/>
+			<p>For this part o the guide, I'll be using the rules GUI from the command, and not from the Trainer menu. From this screen, you can either add a new ruleset by clicking add, or edit/remove, along with seeing an already existing ruleset's details by clicking its name.</p>
+			<div class="picture"><img src="images/rules/RulesSelected.png"></div>
+			<p>Everything is shown from whether team preview is shown or not, the time for team preview/picking your moves per turn, whether it's a single/double/triple battle, the level cap, or how many Pokémon are brought, along with the clauses list. If the timer is set to 0 seconds, it means that the feature is disabled. If you click add/edit rules, you will be taken to this screen, where you will be asked to enter the rules' (new) name. You can't have an already existing name as a rules name.</p>
+			<div class="picture"><img src="images/rules/NewRulesName.png"></div>
+			<p>Once a ruleset name was decided, you'll be taken to the pixelmon battle screen, where you will be able to select all of the battle rules that you want to save for the preset. You just click propose to save everything.</p>
+			<div class="picture"><img src="images/rules/ClauseSelection.png"></div>
+			<p>Every rules preset will be saved in the rulesets folder in the Pixelmon Essentials folder, in their respective .cfg file. While you can import rulesets with files, do not do it while the server is running, as when the server is closed, all of your files will be deleted for the ones on the server.</p>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>
